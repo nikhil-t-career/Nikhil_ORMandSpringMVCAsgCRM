@@ -3,20 +3,19 @@ package my.smvc.hib.config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 
-public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class DispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
     protected Class < ? > [] getRootConfigClasses() {
         return new Class[] {
-            AppContext.class
+            ApplicationContext.class
         };
-        //return null;
     }
 
 	@Override
     protected Class < ? > [] getServletConfigClasses() {
         return new Class[] {
-            WebMvcConfig.class
+            WebMvcConfigurerImpl.class
         };
     }
 

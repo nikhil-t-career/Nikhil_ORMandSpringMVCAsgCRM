@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = {
     "my.smvc.hib"
 })
-public class WebMvcConfig implements WebMvcConfigurer {
+public class WebMvcConfigurerImpl implements WebMvcConfigurer {
 
     @Bean
     public InternalResourceViewResolver resolver() {

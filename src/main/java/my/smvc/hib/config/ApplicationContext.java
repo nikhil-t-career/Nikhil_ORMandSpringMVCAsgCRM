@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @PropertySource("classpath:crmdb.properties")
 @EnableTransactionManagement
-public class AppContext {
+public class ApplicationContext {
 
     @Autowired
     private Environment environment;
